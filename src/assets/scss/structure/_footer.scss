@@ -10,7 +10,7 @@
     position: relative;
     right: 0;
     color: $footer-color;
-    left: $sidebar-width;
+    // left: $sidebar-width;
     height: $footer-height;
     box-shadow: $box-shadow;
     background-color: $footer-bg;
@@ -25,7 +25,7 @@
 // Enlarge menu
 .vertical-collpsed {
     .footer {
-        left: $sidebar-collapsed-width;
+        left: 0;
     }
 }
 

@@ -7,7 +7,8 @@ import { LayoutComponent } from './layout.component';
 import { NgApexchartsModule } from 'ng-apexcharts';
 import { PerfectScrollbarModule } from 'ngx-perfect-scrollbar';
 import { DashboardComponent } from '../pages/dashboard/dashboard.component';
-import { SharedModule } from './shared/shared.module';
+import { SharedModule } from '../pages/shared/shared.module';
+import { SharedLayoutModule } from './shared/shared-layout.module';
 
 @NgModule({
   declarations: [
@@ -17,6 +18,7 @@ import { SharedModule } from './shared/shared.module';
   imports: [
     CommonModule,
     LayoutRoutingModule,
+    SharedLayoutModule,
     SharedModule,
     NgApexchartsModule,
     PerfectScrollbarModule,

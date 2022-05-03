@@ -12,8 +12,6 @@ import { FooterComponent } from './footer/footer.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
 import { RightsidebarComponent } from './rightsidebar/rightsidebar.component';
 import { HorizontalnavbarComponent } from './horizontalnavbar/horizontalnavbar.component';
-import { PagetitleComponent } from './pagetitle/pagetitle.component';
-// import { PaginationComponent } from './pagination/pagination.component';
 
 @NgModule({
   // tslint:disable-next-line: max-line-length
@@ -23,8 +21,6 @@ import { PagetitleComponent } from './pagetitle/pagetitle.component';
     SidebarComponent,
     RightsidebarComponent,
     HorizontalnavbarComponent,
-    PagetitleComponent,
-    // PaginationComponent,
   ],
   imports: [
     CommonModule,
@@ -40,9 +36,8 @@ import { PagetitleComponent } from './pagetitle/pagetitle.component';
     SidebarComponent,
     RightsidebarComponent,
     HorizontalnavbarComponent,
-    PagetitleComponent,
 
   ],
   providers: [],
 })
-export class SharedModule {}
+export class SharedLayoutModule {}

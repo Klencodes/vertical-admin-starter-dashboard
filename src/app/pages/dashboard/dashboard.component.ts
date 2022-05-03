@@ -15,7 +15,6 @@ import {  revenueChart, salesAnalytics, sparklineEarning, sparklineMonthly, tran
  * Dashboard Component
  */
 export class DashboardComponent implements OnInit {
-  title="Dashboard"
   term: any;
   transactions: Transaction[];
   statData: Stat[];
@@ -46,7 +45,7 @@ export class DashboardComponent implements OnInit {
   };
 
   ngOnInit(): void {
-    this.breadCrumbItems = [{ label: 'Shinify' }, { label: 'Dashboard', active: true }];
+    this.breadCrumbItems = [{ label: 'Admin' }, { label: 'Dashboard', active: true }];
 
     this.formData = this.formBuilder.group({
       message: ['', [Validators.required]],
