@@ -7,10 +7,29 @@
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
-          "style": "scss"
+          "style": "scss",
+          "skipTests": true
+        },
+        "@schematics/angular:class": {
+          "skipTests": true
+        },
+        "@schematics/angular:directive": {
+          "skipTests": true
+        },
+        "@schematics/angular:guard": {
+          "skipTests": true
+        },
+        "@schematics/angular:interceptor": {
+          "skipTests": true
+        },
+        "@schematics/angular:pipe": {
+          "skipTests": true
+        },
+        "@schematics/angular:service": {
+          "skipTests": true
         },
         "@schematics/angular:application": {
-          "strict": true
+          "strict": false
         }
       },
       "root": "",
@@ -20,7 +39,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/lifty-admin",
+            "outputPath": "dist/",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -31,9 +50,16 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.scss"
+              "./node_modules/@angular/material/prebuilt-themes/indigo-pink.css",
+              "src/styles.scss",
+              "./node_modules/ngx-toastr/toastr.css",
+              "src/assets/scss/_general.scss",
+              "src/assets/plugins/bootstrap/bootstrap.css",
+              "node_modules/sweetalert2/src/sweetalert2.scss"
             ],
-            "scripts": []
+            "scripts": [
+              "src/assets/plugins/bootstrap/bootstrap.js"
+            ]
           },
           "configurations": {
             "production": {
@@ -99,6 +125,7 @@
               "src/assets"
             ],
             "styles": [
+              "./node_modules/@angular/material/prebuilt-themes/indigo-pink.css",
               "src/styles.scss"
             ],
             "scripts": []

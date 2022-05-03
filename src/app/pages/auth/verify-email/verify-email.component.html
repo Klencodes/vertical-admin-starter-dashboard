@@ -1,0 +1,25 @@
+<div class="d-flex justify-content-center align-items-center bg-white pl-4 my-4">
+    <!-- Left side dashboard -->
+    <div class="mr-auto" style="margin-top: 8rem;">
+        <h3 class="page-title">Verify Email</h3>
+    </div>
+    <!-- <div class="right-title">
+        
+    </div> -->
+
+    <div class="card-body">
+        <div *ngIf="isProcessing">
+            Verifying...
+        </div>
+        <div *ngIf="!isProcessing && emailStatus==='VERIFIED'">
+            <div>
+                {{emailMsg}} <br>
+                I'm redirecting you to login page...
+            </div>
+        </div>
+        <div *ngIf="!isProcessing && emailStatus==='FAILED'">
+            Verification failed, you can also verify your account using the <a routerLink="forgot-password">forgot
+                password</a> page.
+        </div>
+    </div>
+</div>

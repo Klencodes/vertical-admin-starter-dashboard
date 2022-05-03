@@ -1,1 +1,696 @@
-/* You can add global styles to this file, and also import other style files */
+/* Swipper css imports */
+@import "~@ng-select/ng-select/themes/material.theme.css";
+/* Swipper css imports */
+@import "~swiper/css";
+@import "~swiper/css/pagination";
+@import "~swiper/css/navigation";
+/*Variables imports */
+@import './assets/scss/variables';
+
+.swiper {
+    width: 100%;
+    height: 100%;
+    max-height: 420px !important;
+}
+  
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: transparent;
+    max-height: 420px !important;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+  }
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+    border-radius: 5px;
+    max-height: 420px !important;
+    
+  }
+  
+body {
+  // background-color: #f1f5f7 !important;
+}
+a {
+  color: $gray-700 !important;
+  text-decoration: none !important;
+  cursor: pointer;
+}
+a:hover {
+  color: $primary !important;
+}
+a.primary-link {
+  color: $primary !important;
+  text-decoration: none !important;
+}
+.nav-link {
+  // color: $gray-600 !important;
+}
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link:active {
+  // color: $link-color !important;
+}
+.btn-check:focus+.btn, .btn:focus {
+  outline: none !important;
+  box-shadow:none !important;
+}
+.btn-outline-primary {
+  border-color: $primary !important;
+}
+.btn-outline-primary:hover {
+  color: $white !important;
+  background-color: $primary !important;
+  border-color: $primary !important;
+}
+.btn-actions:not(.btn-loading) .btn:hover {
+  background-image: linear-gradient(rgba(0,0,0,.1),rgba(0,0,0,.1)) !important;
+}
+.form-control:focus {
+  border-color: none !important;
+  box-shadow: none !important;
+}
+.row.no-gutters{
+  --bs-gutter-x: 0rem !important;
+}
+.pull-right {
+  float: right !important;
+}
+.pull-left {
+  float: left !important;
+}
+.flex-to-right {
+  display: flex;
+  justify-content: flex-end;
+}
+.full-width {
+  width: 100% !important;
+}
+.full-height {
+  height: 100% !important;
+}
+.mat-tab-group.mat-primary .mat-ink-bar, .mat-tab-nav-bar.mat-primary .mat-ink-bar {
+  background-color: $primary !important;
+  height: 4px !important;
+}
+.mat-dialog-container {
+  min-width: 40% !important
+}
+.swal2-styled:focus {
+  outline: 0;
+  box-shadow: none !important;
+}
+.swal2-styled.swal2-confirm {
+  background-color: $primary !important;
+}
+.mat-select-panel:not([class*=mat-elevation-z]) {
+  box-shadow: 0px 1px 1px -1px rgb(0 0 0 / 5%), 0px 1px 1px 0px rgb(0 0 0 / 14%), 0px 1px 8px 0px rgb(0 0 0 / 12%) !important;
+}
+.mat-flat-button.mat-primary, .mat-raised-button.mat-primary, .mat-fab.mat-primary, .mat-mini-fab.mat-primary {
+  background-color: $primary !important;
+}
+mat-form-field {
+  width: 100%;
+}
+.d-inline {
+  display: inline !important;
+}
+.ng-select.ng-select-multiple .ng-select-container .ng-value-container .ng-value {
+  background-color: $gray-100 !important;
+  color: $dark !important;
+  justify-content: left !important;
+  display: flex !important;
+}
+.ng-select.ng-select-multiple .ng-select-container .ng-value-container .ng-value .ng-value-icon {
+  color: $primary !important;
+  font-weight: 800;
+}
+.icontext {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  vertical-align: middle;
+}
+.icontext .icon {
+  position: relative;
+  margin-right: 10px;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  -webkit-box-flex: 0;
+  -ms-flex-positive: 0;
+  flex-grow: 0;
+}
+.img-sm{    
+  width: 80px;
+  height: 80px;
+}
+
+.img-xs, .img-sm, .img-md, .img-lg {
+  -o-object-fit: cover;
+  object-fit: cover;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  -webkit-box-flex: 0;
+  -ms-flex-positive: 0;
+  flex-grow: 0;
+}
+.rounded-circle {
+  border-radius: 50% !important;
+}
+.border {
+  border: 1px solid $primary !important;
+}
+.list-group-item.active {
+  color: #fff !important;
+  background-color: $primary !important;
+  border-color: $primary !important;
+}
+.user-active {
+  position: relative;
+  top: -2rem;
+  left: 31rem;
+  background-color: $success;
+  border-radius: 5px;
+  padding: 2px 10px;
+  color: #fff;
+}
+.prod-det-color{
+  padding: 5px 5px 0 !important;
+}
+.prod-detail.nav-link {
+  padding: 5px 5px 0 !important;
+}
+.prod-detail.nav-link:active {
+ border-color: $primary;
+ border: 2px solid $primary;
+}
+
+.varient-title {
+  background-color: $gray-100;
+  padding: 10px 0px;
+  border-bottom: 1px solid rgba(0, 0, 0, .125);
+}
+.varient-body {
+  padding: 0.5rem;
+}
+.tab-content {
+    height: 100% !important;
+    background-size: cover !important;
+    background-position: center !important;
+}
+.tab-pane {
+    height: 100% !important;
+    background-size: cover !important;
+    background-position: center !important;
+}
+
+// 
+// authentication.scss
+//
+
+.auth-body-bg{
+  background-color: $card-bg;
+}
+
+.authentication-bg{
+  background-image: url("./assets/images/pages/auth-bg.jpg");
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  .bg-overlay{
+      background-color: #292626;
+  }
+
+  @media (max-width: 991px) {
+          display: none;
+  }
+}
+
+.authentication-page-content{
+  height: 100vh;
+  display: flex;
+}
+
+.auth-form-group-custom{
+  position: relative;
+  .form-control{
+      height: 50px;
+      padding-left: 40px;
+  }
+
+  label{
+      position: absolute;
+      top: 7px;
+      left: 40px;
+  }
+
+  .auti-custom-input-icon{
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      left: 5px;
+      font-size: 24px;
+      color: $primary;
+  }
+}
+
+// authentication home icon
+.home-btn {
+  position: absolute;
+  top: 15px;
+  right: 25px;
+  z-index: 9;
+  color: $primary;
+}
+
+.dropdown-toggle::after {
+  display: none !important;
+  margin-left: 0.255em;
+  vertical-align: 0.255em;
+  content: "";
+  border-top: 0.3em solid;
+  border-right: 0.3em solid transparent;
+  border-bottom: 0;
+  border-left: 0.3em solid transparent;
+}
+
+mat-expansion-panel.remove-box-shadow:not([class*=mat-elevation-z]) {
+     box-shadow: 0px 0px 0px 0px rgb(0 0 0 / 20%), 0px 0px 0px 0px rgb(0 0 0 / 14%), 0px 0px 0px 0px rgb(0 0 0 / 12%) !important;
+}
+.remove-subcat-margin {
+  margin: 0 -1.9rem !important;
+}
+.unstyled-list {
+  list-style: none !important;
+}
+
+
+.product-box{
+  padding: 10px 20px;
+  // border: 1px solid $border-color;
+  transition: all 0.4s;
+  background-color: $white;
+  border-radius: 7px;
+  height: 100%;
+  object-fit: fill;
+
+  &:hover{
+      box-shadow: $box-shadow;
+  }
+}
+
+.product-img{
+  position: relative;
+  // max-height: 200px;
+  // height: 100%;
+  background-size: cover;
+  background-position: center;
+
+  img {
+    height: 100%;
+  }
+  .product-ribbon{
+      position: absolute;
+      top: 0;
+      left: -24px;
+      background-color: $primary;
+      padding: 6px 8px;
+      border-radius: 0px 30px 30px 0px;
+  }
+
+  .product-like{
+      position: absolute;
+      top: 0;
+      right: 0;
+      a{
+          display: inline-block;
+          width: 40px;
+          height: 40px;
+          border: 2px solid $gray-300;
+          line-height: 38px;
+          border-radius: 50%;
+          text-align: center;
+          color: $gray-500;
+      }
+  }
+}
+
+.product-detail{
+  .nav-pills{
+      .nav-link{
+          margin-bottom: 7px;
+          &.active{
+              background-color: $primary;
+          }
+          .tab-img{
+            width: 3rem;
+            height: 4rem;          }
+      }
+  }
+
+  .product-img{
+      // border: 1px solid $border-color;
+      // padding: 4px;
+      img {
+        max-height: 230px;
+        max-width: 200px;
+        width: 100%;
+        height: 100%;
+        object-fit: fill;;
+      }
+  }
+}
+
+.product-desc-list{
+  li{
+      padding: 4px 0px;
+  }
+}
+
+.product-review-link{
+  .list-inline-item{
+      a{
+          color: $gray-600;
+      }
+      &:not(:last-child){
+          margin-right: 14px;
+      }
+  }           
+}
+.mat-expansion-panel-body {
+  padding: 0 24px 0px !important;
+}
+
+.cursor-pointer {
+  cursor: pointer !important;
+}
+
+.text-primary{
+  color: $primary !important;
+}
+.ng5-slider .ng5-slider-pointer {
+  top: -12px !important;
+  width: 25px !important;
+  height: 25px !important;
+  background-color: $primary !important;
+}
+.ng5-slider .ng5-slider-pointer:after {
+  top: 9px !important;
+  left: 9px !important;
+}
+
+//
+// apexcharts.scss
+//
+.apex-charts {
+  min-height: 10px !important;
+  text {
+      font-family: $font-family-base !important;
+      fill: $gray-500;
+  }
+  .apexcharts-canvas {
+      margin: 0 auto;
+  }
+}
+
+.apexcharts-tooltip-title,
+.apexcharts-tooltip-text {
+  font-family: $font-family-base !important;
+}
+
+.apexcharts-legend-series {
+  font-weight: $font-weight-medium;
+}
+
+.apexcharts-gridline {
+  pointer-events: none;
+  stroke: $apex-grid-color;
+}
+
+.apexcharts-legend-text {
+  color: $gray-600 !important;
+  font-family: $font-family-base !important;
+  font-size: 13px !important;
+}
+
+.apexcharts-pie-label {
+  fill: $white !important;
+}
+
+.apexcharts-yaxis,
+.apexcharts-xaxis {
+  text {
+      font-family: $font-family-base !important;
+      fill: $gray-500;
+  }
+}
+.btn:active, btn:hover{
+  outline: none !important;
+  
+}
+.btn-primary {
+  color: #fff !important;
+  background-color: $primary !important;
+  border-color: $primary !important;
+}
+.table-responsive {
+  display: block;
+  width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+.itemside {
+  position: relative;
+  display: flex;
+  width: 100%;
+}
+.itemside .aside {
+  position: relative;
+  flex-shrink: 0;
+}
+.itemside .info {
+  padding-left: 15px;
+  padding-right: 7px;
+}
+.table-shopping-cart .price {
+  font-weight: 500;
+  margin-right: 5px;
+  display: block;
+}
+.box {
+  padding: 18px;
+  background: $white;
+  border: 1px solid $border-color;
+}
+.order-header {
+  padding: 1rem;
+  margin-bottom: 0;
+  border-bottom: 1px solid $border-color;
+  border-top: 1px solid $border-color;
+  display: flex;
+  justify-content: space-between;
+  .dropdown-icon{
+    font-size: 1.6rem;
+    margin-top: -8px;
+    position: relative;
+    top: 4px;
+  }
+}
+.table th, .table td {
+  padding: 0.75rem;
+  vertical-align: top;
+  border-top: 1px solid $border-color;
+  border-bottom: none;
+}
+
+// .size-card:active, .size-card:hover {
+//   border-color: $primary !important;
+//   border: 2px !important;
+//   color: $primary !important;
+// }
+.size-card {
+  height: auto;
+  width: auto;
+  min-width: 120px;
+  min-height: 100px;
+  text-align: center;
+  border: 1px solid $border-color;
+  border-radius: 5px;
+  background-color: $white;
+  // padding: 5px 0;
+}
+.color-card {
+  height: auto;
+  width: auto;
+  min-width: 80px;
+  min-height: 80px;
+  text-align: center;
+  border: 1px solid $border-color;
+  border-radius: 5px;
+  // padding: 5px;
+  margin-right: 10px;
+  margin-top: 10px;
+}
+.inputfile {
+  width: 0.1px;
+  height: 0.1px;
+  opacity: 0;
+  overflow: hidden;
+  position: absolute;
+  z-index: -1;
+}
+.inputfile + label {
+  font-weight: 500;
+  color:  $primary;
+  // background-color: $primary-color;
+  border: 1px solid $primary;
+  display: inline-block;
+  padding: 5px 20px;
+  text-align: center;
+}
+.inputfile:focus + label,
+.inputfile + label:hover {
+  color: $primary;
+  cursor: pointer;
+}
+.file-to-upload {
+  color: $primary; 
+  font-weight: lighter; 
+  margin-top: 0.7rem;
+  margin-bottom: 2rem; 
+  text-align: center;
+}
+.preview-img {
+  height: 100px;
+  width: 100px;
+  margin: 10px;
+  border-radius: 5px;
+  border: 1px solid $border-color;
+}
+
+.add-more-media {
+  color: $primary;
+  border: 1px solid $primary;
+  display: inline-block;
+  padding: 5px 10px;
+  margin-left: 1rem;
+  text-align: center;
+}
+.media-img-preview {
+  height: 150px;
+  width: 150px;
+  margin: 1rem 1rem 0px 0px;
+}
+.media-video-preview{    
+  height: 150px;
+  width: 200px;
+  margin: 1rem 1rem 0px 0px;
+}
+.media-card {
+  border: 1px solid $border-color;
+  border-radius: 5px;
+  padding: 0.7rem;
+  margin-bottom: 1rem;
+}
+.payment-text {
+  margin-top: 1rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+.hidden-wrapper {
+  display: block;
+  margin-bottom: 1rem;
+}
+.remove-cart-item {
+  font-size: 1.5rem !important;
+  font-weight: 600;
+  color: $danger !important;
+  cursor: pointer;
+}
+.recom-categories {
+  position: relative;
+  bottom: 7rem;
+}
+.product-list-wrapper{
+  position: relative;
+  bottom: 4rem;
+}
+.clear-cart {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 0.5rem;
+  a {
+    color: $red !important;
+    font-size: 16px;
+    font-weight: 600;
+    padding-right: 0.5rem;
+    cursor: pointer;
+  }
+}
+
+.mat-dialog-min-max-custom {
+  min-width: 360px;
+  max-width: 500px;
+}
+.table>:not(:first-child) {
+  border-top: none !important;
+}
+
+.dropzone {
+  max-height: 230px;
+  height: 100%;
+  display: table;
+  width: 100%;
+  margin-bottom: 1.2rem;
+  max-width: 320px;
+  border: 2px dashed $border-color;
+  text-align: center;
+}
+.text-wrapper:hover {
+  span {
+    visibility: visible;
+  }
+}
+.text-wrapper {
+  display: table-cell;
+  vertical-align: middle;
+  input[type="file"]{
+    display:none;
+    }
+  label{
+    font-weight: 600;
+    // color: $primary;
+
+  }
+  img {
+    max-height: 230px;
+    max-width: 320px;
+    height: 100%;
+    width: 100%;
+    object-fit: fill;
+  }
+  span {
+    cursor: pointer;
+    position: relative;
+    bottom: 8rem;
+    background: $primary;
+    border-radius: 7px;
+    color: $white;
+    padding: 7px;
+    visibility: hidden;
+  }
+}

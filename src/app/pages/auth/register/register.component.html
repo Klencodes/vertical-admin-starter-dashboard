@@ -1,0 +1,87 @@
+    <div class="row no-gutters">
+      <div class="col-lg-4">
+        <div class="authentication-page-content p-4 d-flex align-items-center min-vh-100">
+          <div class="w-100">
+            <div class="row justify-content-center">
+                <div class="text-center">
+                    <div>
+                        <a routerLink="" class="logo"><img src="assets/images/logos/logo-dark.png" height="20" alt="logo"></a>
+                    </div>
+
+                    <h4 class="font-size-18 mt-4">Register account</h4>
+                    <p class="text-muted">Get your free Nazox account now.</p>
+                  </div>                
+                        <div>
+                            <div class="mt-4">
+                                <form class="form-horizontal" [formGroup]="emailFormData" (ngSubmit)="onSubmit(emailFormData?.value)">
+                                    <mat-form-field class="full-width">
+                                        <input matInput  formControlName="first_name" placeholder="First Name">
+                                        <!-- <mat-error *ngIf="submitted && validate.errors">
+                                            <div *ngIf="validate.error['required']">Email is required</div>
+                                            <div *ngIf="validate.error['email']">Email must be a valid email address</div>
+                                            </mat-error> -->
+                                    </mat-form-field>
+                                    <mat-form-field class="full-width">
+                                        <input matInput  formControlName="last_name" placeholder="Last Name">
+                                        <!-- <mat-error *ngIf="submitted && validate.errors">
+                                            <div *ngIf="validate.error['required']">Email is required</div>
+                                            <div *ngIf="validate.error['email']">Email must be a valid email address</div>
+                                            </mat-error> -->
+                                    </mat-form-field>
+                                    <mat-form-field class="full-width">
+                                        <mat-label>Account Type</mat-label>
+                                        <mat-select formControlName="user_type">
+                                            <mat-option [value]="null">Select Account Type</mat-option>
+                                            <mat-option value="MERCHANT">Merchant</mat-option>
+                                            <mat-option value="CUSTOMER">Customer</mat-option>
+                                        </mat-select>
+                                    </mat-form-field>
+                                    <mat-form-field class="full-width">
+                                        <input matInput formControlName="email" placeholder="Email">
+                                        <!-- <mat-error *ngIf="submitted && validate.errors">
+                                            <div *ngIf="validate.error['required']">Email is required</div>
+                                            <div *ngIf="validate.error['email']">Email must be a valid email address</div>
+                                            </mat-error> -->
+                                    </mat-form-field>
+                                    <mat-form-field class="full-width">
+                                        <input [type]="hidePassword? 'password' : 'text'" matInput formControlName="password" placeholder="Password">
+                                        <mat-icon matSuffix (click)="hidePassword = !hidePassword">{{hidePassword ? 'visibility_off' : 'visibility'}} </mat-icon>
+                                        <!-- <mat-error *ngIf="submitted && validate.errors">
+                                            <div *ngIf="validate.error['required']">Email is required</div>
+                                            <div *ngIf="validate.error['email']">Email must be a valid email address</div>
+                                            </mat-error> -->
+                                    </mat-form-field>
+                                    <mat-form-field class="full-width">
+                                        <input [type]="hidePassword? 'password' : 'text'" matInput formControlName="password_confirm" placeholder="Retype Password">
+                                        <mat-icon matSuffix (click)="hidePassword = !hidePassword">{{hidePassword ? 'visibility_off' : 'visibility'}} </mat-icon>
+                                        <!-- <mat-error *ngIf="submitted && validate.errors">
+                                            <div *ngIf="validate.error['required']">Email is required</div>
+                                            <div *ngIf="validate.error['email']">Email must be a valid email address</div>
+                                            </mat-error> -->
+                                    </mat-form-field>
+                                
+                                    <div class="text-center">
+                                        <button class="btn btn-primary full-width" type="submit">Register</button>
+                                    </div>
+
+                                </form>
+                            </div>
+                        </div>
+
+                  <div class="mt-4 text-center">
+                    <p class="mb-0">By registering you agree to the Admin <a href="#" class="primary-link">Terms of
+                        Use</a></p>
+                </div>
+                <div class="mt-5 text-center">
+                    <p>Already have an account ? <a routerLink="/auth/login" class="font-weight-medium primary-link">  Login</a> </p>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-8">
+        <div class="authentication-bg">
+          <div class="bg-overlay"></div>
+        </div>
+      </div>
+    </div>

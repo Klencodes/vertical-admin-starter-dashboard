@@ -1,0 +1,71 @@
+{
+  "HEADER": {
+    "SEARCH": "Search...",
+    "MEGA_MENU": "Mega Menu",
+    "CART": {
+      "TITLE": "Cart",
+      "VIEW_ALL": "Clear All",
+      "LOAD_MORE": "View More..",
+      "FIRST": {
+        "TITLE": "Your order is placed",
+        "TEXT": "If several languages coalesce the grammar",
+        "TIME": "3 min ago"
+      }
+    },
+    "LOGIN": {
+      "PROFILE": "Profile",
+      "LOGIN": "Login",
+      "REGISTER": "Register",
+      "SETTINGS": "Settings",
+      "LOGOUT": "Logout"
+    }
+  },
+    "MENUITEMS": {
+    "MENU": {
+      "TEXT": "Menu"
+    },
+    "DASHBOARDS": {
+      "TEXT": "Dashboard",
+      "BADGE": "03"
+    },
+    "PRODUCTS": {
+      "TEXT": "Products",
+      "ITEMS": {
+        "PRODUCTS": "Products",
+        "PRODUCTDETAIL": "Product Detail",
+        "ORDERS": "Orders",
+        "SHOPS": "Shops",
+        "ADDPRODUCT": "Add Product"
+      }
+    },
+    "CUSTOMERS": {
+      "TEXT": "Customers",
+      "ITEMS": {
+        "CUSTOMERS": "List Customers",
+        "CUSTOMERDETAIL": "Customer Detail",
+        "ADDCUSTOMER": "Add Customer"
+      }
+    },
+    "STAFFS": {
+      "TEXT": "Staffs",
+      "ITEMS": {
+        "STAFFS": "List Staffs",
+        "STAFFDETAIL": "Staff Detail",
+        "ADDSTAFF": "Add Staff"
+      }
+    },
+    "MULTILEVEL": {
+      "TEXT": "Multi Level",
+      "ITEMS": {
+        "LEVEL1": {
+          "1": "Level 1.1",
+          "2": "Level 1.2",
+          "LEVEL2": {
+            "1": "Level 2.1",
+            "2": "Level 2.2"
+          }
+        }
+      }
+    }
+  }
+}
